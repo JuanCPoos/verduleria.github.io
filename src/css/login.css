@@ -1,0 +1,58 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(/assets/images/portada.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedor {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background-color: red;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor h2 {
+  font-size: 2.3rem;
+  color: #fff;
+}
+.contenedor .input-contenedor {
+  position: relative;
+  margin: 30px 0;
+  width: 300px;
+  border-bottom: 2px solid #fff;
+}
+.contenedor .input-contenedor label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.6s;
+  font-weight: bold;
+}
+.contenedor .input-contenedor input:focus ~ label,
+.contenedor .input-contenedor input:valid ~ label {
+  top: -5px;
+}
+.contenedor .input-contenedor input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: -35px 0 5px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=login.css.map */

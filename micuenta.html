@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión | Verduleria Tomaco</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/2y6lO0hVVj+7et7hM2q6sEl0r87V7FSfjDQ5jf5y4sfofs" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/css/login.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <h1>Verduleria Tomaco</h1>
+                <!-- agregar iconos -->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></li>
+                        <li><a href="#productos"><i class="bi bi-archive-fill"></i>Productos</a></li>
+                        <li><a href="#contacto"><i class="bi bi-person-lines-fill"></i>Contacto</a></li>
+                        <li class="ml-4 pl-4"><a href="micuenta.html"><i class="bi bi-person-circle"></i>Mi cuenta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="login" class="login__class">            
+                <div class="contenedor">                    
+                    <div class="formulario">
+                        <h2>Iniciar sesión</h2>
+                        <form action="#">
+
+                            <div class="input-contenedor">
+                                <label for="email"><i class="bi bi-person"></i>Usuario</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="input-contenedor">
+                                <label for="password"><i class="bi bi-lock"></i>Contraseña</label>
+                                <input type="password" id="password" name="password" minlength="8" required />
+                            </div>
+                            <div class="olvidar">
+                                <label for="#">
+                                    <input type="checkbox" id="in__olvidar" name="olvidar"/>
+                                <a href="#">Olvidé la contraseña</a>
+                                </label>                                
+                            </div>
+
+                            <button>Acceder</button>
+                            <div class="registrar">
+                                <p>No tengo cuenta. <a href="#">Crear cuenta</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-verduleria">
+            <div class="container">
+                <div class="row">
+                    <div class="col columna-productos">
+                        <h5>PRODUCTOS</h5>
+                        <ul>
+                            <li><a href="#">Frutas</a></li>
+                            <li><a href="#">Verduras</a></li>
+                            <li><a href="#">Hierbas y Especias</a></li>
+                            <li><a href="#">Orgánicos</a></li>
+                            <li><a href="#">Ver más</a></li>
+                        </ul>
+                    </div>
+                    <div class="col columna-empresa">
+                        <h5>EMPRESA</h5>
+                        <ul>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Calidad de nuestros productos</a></li>
+                            <li><a href="#">Valores de nuestra empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col columna-suscripcion">
+                        <h5>Sigamos en contacto</h5>
+                        <p>Suscribite a nuestro newsletter semanal de email marketing para recibir todas las promociones
+                            y ofertas, no te pierdas nada</p>
+                        <form action="" method="post">
+                            <input type="text" name="email" placeholder="Ingresa tu email">
+                            <button class="btn btn-suscribirme" type="submit">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separador container mt-4 mb-4">
+                <span class="elemento-separador"></span>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- derechos reservados y política de compra -->
+                    <div class="derechos-politica-compra text-left">
+                        <ul>
+                            <li>
+                                <p class="derechos-reservados">Derechos reservados © 2020</p>
+                            </li>
+                            <li>
+                                <p><a href="/src/pages/pages_compra_devolucion_defensa.html#compra-linea">Política de
+                                        compra en línea</a> | <a
+                                        href="/src/pages/pages_compra_devolucion_defensa.html#devolucion-productos">Devolución
+                                        de productos</a> | <a
+                                        href="/src/pages/pages_compra_devolucion_defensa.html#defensa-consumidor">Defensa
+                                        del consumidor</a> | <a href="/src/pages/sugerencias_reclamos.html">Sugerencias
+                                        o reclamos</a></p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- copyright y autor -->
+    <div class="footer-bottom">
+        <div class="container d-flex justify-content-between g-1">
+            <!-- <p class="m-0">Copyright &copy; Escuelita Saludable | <span class="flag-icon flag-icon-ar"></span> Español
+                (AR)</p> -->
+            <p class="autor">Creado por <a
+                    href="https://api.whatsapp.com/send/?phone=5493434387478&type=phone_number&app_absent=0"><i
+                        class="custom-icon"></i> Origami</a></p>
+        </div>
+    </div>
+    <!-- archivos JS -->
+    <script src="js/menu-hamburguesa.js"></script>
+    <!-- Link Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
