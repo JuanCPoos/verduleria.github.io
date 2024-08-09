@@ -122,7 +122,7 @@ header .top-header .container nav .hamburger {
 /* inicio main  */
 #portada {
   padding: 100px 0px;
-  background-image: url(assets/images/portada.jpg);
+  background-image: url(./assets/images/portada.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
