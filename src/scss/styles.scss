@@ -124,7 +124,7 @@ header {
 
 #portada {
   padding: 100px 0px;
-  background: url('../assets/images/portada.jpg');
+  background-image: url('../../assets/images/portada.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -309,7 +309,7 @@ header {
       display: inline-block; /* Asegura que se comporte como un elemento en línea */
       width: 24px; 
       height: 24px;
-      background-image: url("../assets/images/llama-origami.png"); 
+      background-image: url("../../assets/images/llama-origami.png"); 
       background-size: cover;
       background-repeat: no-repeat;
       vertical-align: middle; /* Ajusta la alineación vertical si es necesario */
